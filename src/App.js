@@ -1,22 +1,17 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from "./components/layout"
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import React from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Home from "./components/Main/Home";
+import TopicList from "./components/Main/TopicLists";
+import TopicDetail from "./components/Main/TopicDetails";
 
-const App = () => {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="css" element={<About />} />
-          <Route path="javascript" element={<Contact />} />
-          <Route path="react" element={<Contact />} />
-        </Route>
-      </Routes>
-    </Router>
-  );
-};
+const App = () => (
+  <Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/:tech" element={<TopicList />} />
+      <Route path="/:tech/:topic" element={<TopicDetail />} />
+    </Routes>
+  </Router>
+);
 
 export default App;
