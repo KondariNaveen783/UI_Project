@@ -14,13 +14,13 @@ const TopicList = () => {
       <Row>
         <Col xs={3} className="border-end">
           <Nav className="flex-column">
-            {techTopics.map((topic) => (
+            {techTopics.map((eachTopic) => (
               <Nav.Link
-                key={topic}
-                onClick={() => handleTopicClick(topic)}
+                key={eachTopic}
+                onClick={() => handleTopicClick(eachTopic)}
                 style={{ cursor: "pointer" }}
               >
-                {topic}
+                {eachTopic}
               </Nav.Link>
             ))}
           </Nav>

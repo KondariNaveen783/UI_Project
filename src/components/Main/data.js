@@ -21,6 +21,7 @@ export const topics = {
   HTML: ["Semantic Tags", "Forms", "SEO"],
   CSS: ["Flex-box", "Grid", "Animations"],
   JavaScript: ["Closures", "Promises", "Async/Await"],
+  Bootstrap: ["Semantic Tags", "Forms", "SEO"],
   React: ["Components", "Hooks", "State Management"],
 };
 
