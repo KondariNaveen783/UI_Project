@@ -31,17 +31,17 @@ export const logos = [
 ];
 
 export const topics = {
-  HTML: ["Semantic Tags", "Forms", "SEO"],
+  HTML: ["SEO", "Semantic Tags", "Forms"],
   CSS: ["Flex-box", "Grid", "Animations"],
-  JavaScript: ["Closures", "Promises", "Async/Await"],
-  React: ["Components", "Hooks", "State Management"],
+  JavaScript: ["Promises", "Closures", "Async/Await"],
+  React: ["Hooks", "Components", "State Management"],
 };
 
 export const componentsMap = {
   "Semantic Tags": <SemanticTags />,
   Forms: <Forms />,
   SEO: <Seo />,
-  FlexBox: <FlexBox />,
+  "Flex-box": <FlexBox />,
   Grid: <Grid />,
   Animations: <Animations />,
   Closures: <Closure />,
