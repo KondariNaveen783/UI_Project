@@ -1,3 +1,16 @@
+import Animations from "../Topics/Animations";
+import AsyncAwait from "../Topics/AsyncAwait";
+import Closure from "../Topics/Closure";
+import Components from "../Topics/Components";
+import FlexBox from "../Topics/Flexbox";
+import Forms from "../Topics/Forms";
+import Grid from "../Topics/Grid";
+import Hooks from "../Topics/Hooks";
+import Promises from "../Topics/Promises";
+import SemanticTags from "../Topics/SemanticTags";
+import Seo from "../Topics/Seo";
+import StateManagement from "../Topics/StateManagement";
+
 export const logos = [
   {
     name: "HTML",
@@ -18,23 +31,23 @@ export const logos = [
 ];
 
 export const topics = {
-  HTML: ["Semantic Tags", "Forms", "SEO"],
+  HTML: ["SEO", "Semantic Tags", "Forms"],
   CSS: ["Flex-box", "Grid", "Animations"],
-  JavaScript: ["Closures", "Promises", "Async/Await"],
-  React: ["Components", "Hooks", "State Management"],
+  JavaScript: ["Promises", "Closures", "Async/Await"],
+  React: ["Hooks", "Components", "State Management"],
 };
 
-export const content = {
-  "Semantic Tags": "Semantic tags describe the purpose of an element...",
-  Forms: "Forms are used to collect user inputs...",
-  SEO: "SEO stands for Search Engine Optimization...",
-  "Flex-box": "Flex-box is a layout model...",
-  Grid: "CSS Grid is a powerful layout system...",
-  Animations: "CSS animations allow transitions...",
-  Closures: "A closure is the combination of a function...",
-  Promises: "Promises represent eventual completion...",
-  "Async/Await": "Async/Await makes asynchronous code...",
-  Components: "Components let you split the UI...",
-  Hooks: "Hooks are functions that let you use state...",
-  "State Management": "State management is handling data...",
+export const componentsMap = {
+  "Semantic Tags": <SemanticTags />,
+  Forms: <Forms />,
+  SEO: <Seo />,
+  "Flex-box": <FlexBox />,
+  Grid: <Grid />,
+  Animations: <Animations />,
+  Closures: <Closure />,
+  Promises: <Promises />,
+  "Async/Await": <AsyncAwait />,
+  Components: <Components />,
+  Hooks: <Hooks />,
+  "State Management": <StateManagement />,
 };
